@@ -26,7 +26,8 @@
             linkElement.setAttribute("target", "_blank")
             textNode.append(textWithoutLinks[i], linkElement)
         }
+        textNode.append(textWithoutLinks[textWithoutLinks.length - 1]);
 
         return textNode
     }
-})()
+})();
