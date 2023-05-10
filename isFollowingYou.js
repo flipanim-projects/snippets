@@ -3,7 +3,7 @@
 (async () => {
     if (!document.querySelector("[href=\"profile\"]")) return; // run only if logged in
     if (!window.location.href.includes("profile?name")) return; // run only on profiles 
-    if (!document.querySelector("[value=\"Restore default avatar\"]")) return; // don't run if it's your own profile
+    if (document.querySelector("[value=\"Restore default avatar\"]")) return; // don't run if it's your own profile
     
     let followsYou = await getFollowsYou();
 
