@@ -1,9 +1,11 @@
 /* Shows on their profile whether a user is following you or not.
    This script fetches directly from the /followed page every time */
 (async () => {
-    if (!window.location.href.includes("profile?name")) return; // run only on profiles other than yours
-
-    let followsYou = await getFollowsYou();
+    if (!document.querySelector("[href=\"profile\"]")) return; // run only if logged in
+    if (!window.location.href.includes("profile?name")) return; // run only on profiles 
+    if (!document.querySelector("[value=\"Restore default avatar\"]")) return; // don't run if it's your own profile
+    
+   let followsYou = await getFollowsYou();
 
     const currentUserName = document.querySelector(".profileAvatar>.text_normal").innerText;
     const profileContainer = document.querySelector(".profileAvatar");
