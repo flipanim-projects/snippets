@@ -19,3 +19,7 @@ I use [User JavaScript and CSS](https://chrome.google.com/webstore/detail/user-j
 
 ## Alternatively...
 You can copy and paste a snippet into the Inspect console (DevTools). That will only run once, so it's good for testing
+
+## Screenshots
+<img src="https://i.ibb.co/gwnfjmX/image.png" width="200">
+<img src="https://i.ibb.co/R0MWc0s/image.png" height="50">
