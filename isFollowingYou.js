@@ -14,7 +14,6 @@
     else profileContainer.insertAdjacentHTML('beforeend', `<small style="font-family: Quicksand; text-align: center; display: block"><i>Follows you</i></small>`)
 
     async function getFollowsYou() {
-        console.log("wahoo")
         const response = await fetch("https://flipanim.com/followed");
         let html = await response.text();
         html = html.slice(html.indexOf("Follows you"), html.indexOf("gdprInfo"));
