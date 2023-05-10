@@ -25,4 +25,4 @@
         const followsYou = Array.from(div.querySelectorAll("a")).map(a => a.innerText);
         return followsYou;
     }
-})()
+})();
